@@ -17,3 +17,5 @@ Variables, constantes, commentaires, fonctions de base de la SPL (var_dump, echo
 [Array destructuring](arrays/destructuring.php)
 
 [Spread operator](arrays/spread_operator.php)
+
+[Rappel boucles](arrays/loops_intro.php)
