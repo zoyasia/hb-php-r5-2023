@@ -1,5 +1,6 @@
 <?php
-require_once 'data/users.php';
+require_once __DIR__ . '/data/users.php';
+$title = "Boucles";
 require_once 'layout/header.php';
 ?>
 

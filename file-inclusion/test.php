@@ -1,4 +1,7 @@
-<?php require_once 'layout/header.php'; ?>
+<?php
+$title = "Test";
+require_once 'layout/header.php';
+?>
 
 <h1>TEST PAGE</h1>
 
