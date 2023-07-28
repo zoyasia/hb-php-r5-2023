@@ -34,3 +34,16 @@ do {
 } while ($i < count($notes));
 
 // FOREACH
+echo "<h2>FOREACH</h2>";
+
+foreach ($notes as $note) {
+  echo $note . "<br />";
+}
+
+// Tableau associatif
+$user['name'] = "Johnny";
+$user['age']  = 25;
+
+foreach ($user as $key => $value) {
+  echo "$key : $value<br />";
+}
