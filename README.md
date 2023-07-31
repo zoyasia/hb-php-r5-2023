@@ -19,3 +19,11 @@ Variables, constantes, commentaires, fonctions de base de la SPL (var_dump, echo
 [Spread operator](arrays/spread_operator.php)
 
 [Rappel boucles](arrays/loops_intro.php)
+
+[Foreach & While sur un tableau d'utilisateurs](arrays/loops.php)
+
+[Quelques fonctions sur les tableaux en PHP](arrays/functions.php)
+
+## Inclusion de fichiers
+
+Dossier [file-inclusion](file-inclusion/)
