@@ -14,7 +14,7 @@ const TVA_RATE = 1.2;
         <img src="<?php echo $element['img']; ?>" alt="<?php echo $element['name']; ?>" />
       </div>
       <div class="content">
-        <h2><?php echo $element['name']; ?></h2>
+        <h2><a href="product.php?id=<?php echo $element['id']; ?>"><?php echo $element['name']; ?></a></h2>
         <h3><?php echo getTotalPrice($element['price'], TVA_RATE); ?> €</h3>
         <div class="tags">
           <?php foreach ($element['tags'] as $tagIndex) { ?>
