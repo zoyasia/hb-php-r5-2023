@@ -1,15 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="stylesheet" a="assets/styles.css"></a>
-    <title>Search Bar</title>
-</head>
-<body>
-    <form action="" method="get">
-      <label for="search_bar">Recherche</label>
-      <input type="text" id="search" name="search_bar" />
-    </form>
-</body>
-</html>
+<?php
+require_once 'data/products.php';
+require_once 'layout/header.php';
+?>
+
+<h1>RECHERCHE</h1>
+
+<?php var_dump($_GET); ?>
+
+<form>
+  <input type="text" placeholder="Recherche..." name="search" />
+  <button type="submit">
+    Rechercher
+  </button>
+</form>
+
+<!-- RÉSULTATS -->
+<?php
+if (isset($_GET['search'])) {
+  ['search' => $search] = $_GET;
+
+  $results = array_filter($products, fn ($el) => str_contains($el['name'], $search));
+
+  var_dump($results);
+}
+?>
+
+<?php require_once 'layout/footer.php';
